@@ -18,12 +18,12 @@ Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [compat]
 BasisFunctions = "0.3.3"
-CardinalBSplines = "0.2"
+CardinalBSplines = "0.2.1"
 DomainIntegrals = "0.3.2"
 DomainSets = "0.5.7"
 FillArrays = "0.10,0.11"
 GridArrays = "0.1.11"
-InfiniteVectors = "0.1"
+InfiniteVectors = "0.2"
 Reexport = "1.0"
 julia = "1.5"
 

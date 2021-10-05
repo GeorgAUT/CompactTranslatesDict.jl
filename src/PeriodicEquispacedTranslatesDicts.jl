@@ -217,7 +217,7 @@ similar(dict::GenericPeriodicEquispacedTranslates{K,S,PERIODIZATION}, ::Type{T},
 
 function rescale(dict::PeriodicEquispacedTranslates, a::T, b::T) where {T<:Number}
     map = DomainSets.interval_map(extrema(support(dict))..., a, b)
-    GenericPeriodicEquispacedTranslates(map_grid(translationgrid(dict),map),
+    GenericPeriodicEquispacedTranslates(map_grid(map,translationgrid(dict)),
         x->eval_kernel(dict, inverse(map, x)),
         map.(kernel_support(dict)))
 end

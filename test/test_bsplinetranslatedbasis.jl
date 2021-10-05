@@ -51,7 +51,6 @@ function test_translatedbsplines(T)
     @test !compatible_interpolationgrid(b, MidpointEquispacedGrid(n,0.1,1))
     @test !compatible_interpolationgrid(b, MidpointEquispacedGrid(n,0,1.1))
 
-    println("Expect 12 warnings")
     if T == Float64
         for K in 1:3
             for s2 in 5:6
